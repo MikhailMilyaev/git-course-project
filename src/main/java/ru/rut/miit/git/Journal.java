@@ -16,11 +16,11 @@ import java.util.stream.Stream;
 
 public class Journal {
     private static final String JOURNAL_FILE = "journal.txt";
-    private static final DateTimaFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.println("Использование: java -jar journal.jar [add|list] ['текст записи']");
+            System.out.println("Usage: java -jar journal.jar [add|list] ['entry text']");
             return;
         }
 
